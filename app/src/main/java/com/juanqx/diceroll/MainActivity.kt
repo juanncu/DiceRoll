@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
@@ -14,6 +15,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.juanqx.diceroll.ui.theme.DiceRollTheme
+import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,7 +40,10 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
 @Composable
 fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
-
+  Column(
+    modifier = Modifier,
+    horizontalAlignment = Alignment.CenterHorizontally
+  ) {}
 }
 
 @Preview
